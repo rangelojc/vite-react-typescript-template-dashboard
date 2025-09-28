@@ -1,6 +1,5 @@
 import Footer from "@/components/Footer";
 import { Page } from "@/components/LayoutWidgets";
-import ThemeToggleSwitch from "@/components/ThemeToggleSwitch";
 import { Toaster } from "@/components/ui/toaster";
 import { useToast } from "@/components/ui/use-toast";
 import Sidebar, { SidebarButton } from "@/features/Sidebar/Sidebar";
@@ -39,7 +38,6 @@ function App() {
 
         <div className="h-[calc(100%-var(--footer-height))] w-full">
           <Outlet />
-          <ThemeToggleSwitch />
         </div>
 
         <Footer />
