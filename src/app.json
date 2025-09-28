@@ -1,0 +1,10 @@
+{
+  "app-name": "Dashboard Template",
+  "logo": "",
+  "default-lang": "en",
+  "default-theme": "dark",
+  "default-title": "Dashboard Template",
+  "export-file-prefix": "table",
+  "zustand-app-store": "dashboard-zustand",
+  "default-canonical-link": "https://example.com"
+}

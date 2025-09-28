@@ -1,0 +1,8 @@
+node_modules
+.DS_Store
+localhost.pem
+localhost-key.pem
+.vscode
+.env
+/dist
+.env.local

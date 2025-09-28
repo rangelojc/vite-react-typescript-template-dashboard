@@ -1,0 +1,35 @@
+.default-hover-effect {
+  @apply transition-all hover:brightness-125 duration-100;
+}
+
+.flex-row-v-center {
+  @apply flex flex-row items-center;
+}
+
+.flex-row-h-center {
+  @apply flex flex-row justify-center;
+}
+
+.flex-row-center {
+  @apply flex flex-row justify-center items-center;
+}
+
+.flex-col-h-center {
+  @apply flex flex-col items-center;
+}
+
+.flex-col-v-center {
+  @apply flex flex-col justify-center;
+}
+
+.flex-col-center {
+  @apply flex flex-col justify-center items-center;
+}
+
+.direction-rtl {
+  direction: rtl;
+}
+
+.direction-ltr {
+  direction: ltr;
+}
