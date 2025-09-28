@@ -6,7 +6,7 @@
   "title.login": "Login",
   "title.error": "Something went wrong",
 
-  "footer.msg": "Poseidoneyes. All rights reserved.",
+  "footer.msg": "Dashboard. All rights reserved.",
 
   "login.error.invalidMissingParams": "Missing required parameters",
   "login.error.invalidCredentials": "Invalid credentials",

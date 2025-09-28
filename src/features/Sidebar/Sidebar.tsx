@@ -76,7 +76,7 @@ export default function Sidebar() {
             {() => (
               <>
                 <h2 className="px-2 mb-2 font-semibold text-center">
-                  ADMIN PANEL
+                  Dashboard
                 </h2>
                 <Accordion
                   type="multiple"
