@@ -12,6 +12,7 @@ import useSidebarItems from "@/data/sidebarData";
 import { cn } from "@/lib/utils";
 import { useAppStore } from "@/store/store";
 import { SidebarClose, SidebarOpen } from "lucide-react";
+import { FaBars } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import { Show } from "../../components/Show";
 import AvatarSection from "./AvatarSection";
@@ -160,7 +161,7 @@ export default function Sidebar() {
   );
 }
 
-export const SidebarButton = () => {
+export const DesktopSidebarButton = () => {
   const toggleSidebar = useAppStore((s) => s.toggleSidebar);
   const sidebarExpanded = useAppStore((s) => s.sidebarExpanded);
 
@@ -168,7 +169,7 @@ export const SidebarButton = () => {
     <Button
       variant={"ghost"}
       onClick={toggleSidebar}
-      className="absolute bottom-2 left-0 !px-1 !py-4 bg-white dark:bg-neutral-900 rounded-l-none group border-none !text-foreground"
+      className="absolute bottom-2 left-0 !px-1 !py-4 bg-white dark:bg-neutral-900 rounded-l-none group border-none !text-foreground hidden md:flex"
     >
       <div className="group-hover:opacity-100 opacity-50 transition">
         <Show
@@ -178,6 +179,21 @@ export const SidebarButton = () => {
           {() => <SidebarClose className="size-5" />}
         </Show>
       </div>
+    </Button>
+  );
+};
+
+export const MobileSidebarButton = () => {
+  const toggleSidebar = useAppStore((s) => s.toggleSidebar);
+  // const sidebarExpanded = useAppStore((s) => s.sidebarExpanded);
+
+  return (
+    <Button
+      variant={"ghost"}
+      onClick={toggleSidebar}
+      className="!px-0 block md:hidden"
+    >
+      <FaBars className="size-5 text-neutral-900 dark:!text-white" />
     </Button>
   );
 };

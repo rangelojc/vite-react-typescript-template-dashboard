@@ -8,6 +8,7 @@ import {
   ContentBox,
   ContentHeader,
   ContentTitle,
+  PageHeader,
   Wrapper,
 } from "@/components/LayoutWidgets";
 import Pagination, { PaginationStatus } from "@/components/Pagination";
@@ -18,6 +19,7 @@ import { Badge } from "@/components/ui/badge";
 import { DataTable } from "@/components/ui/data-table";
 import DataTableCrudActions from "@/features/DataTableCrudActions";
 import ExcelExportButton from "@/features/ExcelExportButton";
+import { MobileSidebarButton } from "@/features/Sidebar/Sidebar";
 import UpdateUserDialog from "@/features/Users/UpdateUserDialog";
 import useTableStates from "@/hooks/useTableStates";
 import { useQueryClient } from "@tanstack/react-query";
@@ -144,7 +146,10 @@ const Users = () => {
   return (
     <Wrapper>
       <CustomHelmet title={"Users"} />
-      <ContentTitle text={"Users"} />
+      <PageHeader>
+        <MobileSidebarButton />
+        <ContentTitle text={"Users"} />
+      </PageHeader>
       <ContentBox>
         <ContentHeader>
           <SearchInputWithFields
@@ -194,7 +199,6 @@ const Users = () => {
 
         <TableSkeleton show={isLoading} cols={columns.length} rows={3} />
       </ContentBox>
-
       <UpdateUserDialog
         open={showUpdateModal}
         setOpen={setShowUpdateModal}

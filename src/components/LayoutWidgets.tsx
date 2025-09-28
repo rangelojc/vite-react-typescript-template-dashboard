@@ -81,3 +81,20 @@ export const ContentHeader = ({
     />
   );
 };
+
+export const PageHeader = ({
+  className,
+  style,
+  ...rest
+}: ComponentPropsWithoutRef<"div">) => {
+  return (
+    <div
+      className={cn(
+        "w-full flex flex-row items-center gap-x-4 mb-3",
+        className
+      )}
+      style={style}
+      {...rest}
+    />
+  );
+};

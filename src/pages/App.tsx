@@ -2,7 +2,7 @@ import Footer from "@/components/Footer";
 import { Page } from "@/components/LayoutWidgets";
 import { Toaster } from "@/components/ui/toaster";
 import { useToast } from "@/components/ui/use-toast";
-import Sidebar, { SidebarButton } from "@/features/Sidebar/Sidebar";
+import Sidebar, { DesktopSidebarButton } from "@/features/Sidebar/Sidebar";
 import useDelay from "@/hooks/useDelay";
 import { initI18n } from "@/i18n";
 import { useAppStore } from "@/store/store";
@@ -34,7 +34,7 @@ function App() {
       <Sidebar />
 
       <div className="w-full flex-col-center flex-1 overflow-hidden relative">
-        <SidebarButton />
+        <DesktopSidebarButton />
 
         <div className="h-[calc(100%-var(--footer-height))] w-full">
           <Outlet />
