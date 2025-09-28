@@ -81,14 +81,14 @@ const Login = () => {
                     />
                   </div>
                 </div>
-                <h1>{t("sidebar.title")}</h1>
+                <h1>Login</h1>
               </CardTitle>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-2">
                   <Label htmlFor="username" className="text-muted-foreground">
-                    {t("email")}
+                    User ID
                   </Label>
                   <Input
                     id="email"
